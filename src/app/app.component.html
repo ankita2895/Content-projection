@@ -1,5 +1,7 @@
 <p>Start editing to see some magic happen :)</p>
 <ng-container *ngTemplateOutlet="ankita"></ng-container>
+<input #phone placeholder="phone number" />
+<button type="button" (click)="callPhone(phone.value)">Call</button>
 <hello #test [name]="'angular'" (emitEvent)="emitEvent($event)">
   <app-test></app-test>
 </hello>
