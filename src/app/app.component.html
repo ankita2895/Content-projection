@@ -1,0 +1,9 @@
+<p>Start editing to see some magic happen :)</p>
+<ng-container *ngTemplateOutlet="ankita"></ng-container>
+<hello #test [name]="'angular'" (emitEvent)="emitEvent($event)">
+  <app-test></app-test>
+</hello>
+
+<ng-template #ankita>
+  <h1>Hi i am Ankita Srivastava</h1>
+</ng-template>
